@@ -1,0 +1,100 @@
+{
+  "theme": "dark",
+  "archetype": "LUXURY",
+  "typography": {
+    "headings": {
+      "family": "Cormorant Garamond",
+      "import": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap",
+      "rules": "Use font-light or font-normal. Tight tracking (tracking-tight or tracking-tighter). Capitalize for dramatic effect. Never center align for massive typography. This font provides an elegant, classic editorial vibe."
+    },
+    "body": {
+      "family": "Outfit",
+      "import": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap",
+      "rules": "Sterile, clean, highly legible. Use text-zinc-400 for secondary text and text-zinc-100 for primary paragraphs."
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#050505",
+      "obsidian": "#0A0A0A",
+      "surface": "#141414"
+    },
+    "brand": {
+      "gold": "#D4AF37",
+      "gold_muted": "#AA8B2B",
+      "champagne": "#E6C27A"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "inverse": "#000000"
+    },
+    "rules": "Never use pure #000000 or #808080. Base dark is #050505. Gold must be used sparingly as an accent for lines, highlights, and CTAs. Avoid cheap gradients."
+  },
+  "visual_enhancers": {
+    "surfaces": "Crystal Glassmorphism for floating headers (backdrop-blur-xl bg-black/50 border-b border-white/10). Flat matte dark backgrounds for content sections.",
+    "textures": "Include a fixed, full-screen subtle noise/grain overlay div (pointer-events-none, opacity-5) to kill digital flatness. High-end luxury demands physical texture.",
+    "borders": "1px solid #ffffff1a (white 10% opacity) for dividers, accordions, and structural lines.",
+    "shapes": "Sharp corners (rounded-none) or very slight radii (rounded-sm) for a sophisticated, structured editorial look."
+  },
+  "layouts": {
+    "grids": "Use The Bento Grid Protocol (Mode A - Tetris). Heavy use of asymmetry. Overlap images over text boxes. Don't be afraid of empty grid cells.",
+    "spacing": "Extremely generous padding. py-32 or py-40 for major sections, gap-16 between large visual blocks. Let the design breathe."
+  },
+  "motion": {
+    "libraries": "framer-motion, @studio-freight/lenis (mandatory for momentum scrolling), react-fast-marquee, react-compare-slider",
+    "patterns": {
+      "hero_reveal": "Line-by-line masked text reveal on load using Framer Motion variants (overflow-hidden wrapper with child translating Y).",
+      "scroll_reveal": "Elements fade in and translate Y up (by 30px) gently on scroll (whileInView).",
+      "hover": "Images subtly scale up (scale-105) inside hidden overflow containers with a smooth, long duration transition (duration-700 ease-out)."
+    }
+  },
+  "components": {
+    "buttons": "Sharp rectangular or fully pill-shaped. Bordered with muted gold, solid white text. On hover, background fills with muted gold and text turns black. No generic Vercel or Bootstrap look.",
+    "cards": "No standard shadow cards. Use border-b dividers (list view) or flat, borderless overlapping images with text outside the image container."
+  },
+  "sections_blueprint": {
+    "nav": "Sticky header, backdrop-blur-2xl bg-black/60. Left: Logo mark, Middle: Links (About, Services, Portfolio, Shop, Contact), Right: Book Now button.",
+    "hero": "Massive kinetic typography 'GOLD SKIN' in Cormorant Garamond. Logo centered or integrated into the grid. Masked text reveal. Dark abstract watery or textural background. Absolute minimum text overlaying the image to preserve contrast.",
+    "manifesto": "Numbered chapters (01, 02, 03) mapping out the spa's philosophy. Massive outlined numbers. Grayscale elegant portraits overlapping the text grid.",
+    "services": "Interactive accordion or hover-reveal list. 1px border-y. On hover, an adjacent image changes or reveals. Keep descriptions sterile and clinical.",
+    "gallery": "Before & After comparison section. Use a split screen slider (react-compare-slider) or custom Framer Motion drag to show the transformation.",
+    "gift_cards": "Floating 3D card layout (use Framer Motion useMotionValue, rotateX/rotateY tied to mouse position). Makes the gift card feel premium and tactile.",
+    "editorial_marquee": "react-fast-marquee running across the screen. 'LUXURY MED SPA — AESTHETICS — WELLNESS — RENEWAL —' in Outfit font, tracked out widely (tracking-[0.2em]).",
+    "faq": "Minimalist accordion (Shadcn customized). No borders on the side, just pure text expansion with a 1px border-b separator.",
+    "contact": "Demo lead capture form. Clean 1px bottom border inputs (border-b border-zinc-800 focus:border-gold). No bulky backgrounds on inputs."
+  },
+  "image_urls": {
+    "logo": "https://customer-assets-39nsmqrw.emergentagent.net/job_f527503a-0750-4245-96e6-e4d30985b2dc/artifacts/ri9dg30f_image.png",
+    "current_hero": "https://customer-assets-39nsmqrw.emergentagent.net/job_f527503a-0750-4245-96e6-e4d30985b2dc/artifacts/dzo702en_image.png",
+    "facial_treatment": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzcGElMjBmYWNpYWwlMjB0cmVhdG1lbnR8ZW58MHx8fHwxNzg2MTMwOTg0fDA&ixlib=rb-4.1.0&q=85",
+    "massage": "https://images.unsplash.com/photo-1706795033728-9232ef548a16?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBzcGElMjBmYWNpYWwlMjB0cmVhdG1lbnR8ZW58MHx8fHwxNzg2MTMwOTg0fDA&ixlib=rb-4.1.0&q=85",
+    "skincare_product_1": "https://images.unsplash.com/photo-1770981667079-d59bbacc0739?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxza2luY2FyZSUyMHByb2R1Y3QlMjBnb2xkJTIwYmxhY2t8ZW58MHx8fHwxNzg2MTMwOTg0fDA&ixlib=rb-4.1.0&q=85",
+    "skincare_product_2": "https://images.unsplash.com/photo-1599022484220-967921f2217c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxza2luY2FyZSUyMHByb2R1Y3QlMjBnb2xkJTIwYmxhY2t8ZW58MHx8fHwxNzg2MTMwOTg0fDA&ixlib=rb-4.1.0&q=85",
+    "portrait_grayscale": "https://images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMGdsb3dpbmclMjBza2luJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg2MTMwOTg0fDA&ixlib=rb-4.1.0&q=85",
+    "spa_interior": "https://images.unsplash.com/photo-1770625467960-e6847f909321?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxzcGElMjBpbnRlcmlvciUyMGRhcmslMjBtb29keXxlbnwwfHx8fDE3ODYxMzA5ODR8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "You are building an award-worthy luxury med spa site. Focus strictly on the dark luxury aesthetic (Archetype 5: Luxury). Avoid all standard SaaS templates.",
+    "Ensure Lenis smooth scrolling (@studio-freight/lenis) is implemented at the root level for premium momentum scrolling.",
+    "Implement the hero section with Framer Motion variants for a masked line-by-line reveal of the primary headline.",
+    "Use the brand's exact logo (ri9dg30f_image.png) dynamically integrated into the header and hero.",
+    "All interactive elements and inputs MUST have data-testid attributes for testing.",
+    "Do NOT use pure #000000. Base background is #050505.",
+    "Never use fully transparent backgrounds on floating elements like navigation. Apply backdrop-blur-xl bg-black/60 instead.",
+    "Use lucide-react icons with strokeWidth={1} or {1.5} to match the delicate luxury typography.",
+    "Add 'use client' at the top of any file using Framer Motion or Lenis.",
+    "For the 'Before and After' feature, utilize react-compare-slider or build a bespoke Framer Motion drag slider."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Create depth through layered design elements with z-index hierarchy and glass-morphism.",
+    "You MUST NOT apply universal transition (transition: all). Always specify target properties.",
+    "You MUST NOT center align the app container in App.css or index.css.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Use sonner for toast notifications.",
+    "Use pre-existing components from src/components/ui when applicable, but customize them heavily to match the brand."
+  ]
+}
