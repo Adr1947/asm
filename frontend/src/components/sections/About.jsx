@@ -46,8 +46,8 @@ export default function About() {
               className="mt-10 relative w-full max-w-md aspect-[4/5] overflow-hidden"
             >
               <img
-                src={IMAGES.spaInterior}
-                alt="Gold Skin interior"
+                src="/about.png"
+                alt="Gold Skin Spa & Beauty building exterior, McAllen TX"
                 className="h-full w-full object-cover grayscale-[15%] hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />

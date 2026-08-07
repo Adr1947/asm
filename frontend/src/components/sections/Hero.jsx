@@ -113,7 +113,7 @@ export default function Hero() {
           className="relative"
         >
           <div className="relative aspect-[4/5] w-full overflow-hidden ring-1 ring-inset ring-white/10">
-            <img src={IMAGES.spaInterior} alt="Gold Skin studio" className="h-full w-full object-cover" />
+            <img src="/hero.png" alt="Gold Skin Spa & Beauty interior, McAllen TX" className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
           </div>
 
