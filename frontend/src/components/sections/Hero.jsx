@@ -11,9 +11,11 @@ const lineVariants = {
 };
 
 const STATS = [
-  { value: "4.9", label: "Rated by 800+ clients" },
-  { value: "8,000+", label: "Treatments performed" },
-  { value: "15+", label: "Years of expertise" },
+  { value: "40+", label: "Treatments offered" },
+  { value: "Physician-guided", label: "Weight loss · Tirzepatide & Semaglutide" },
+  { value: "McAllen & RGV", label: "Serving the Rio Grande Valley" },
+  // NOTE TO CLIENT: replace one marker above with a real Google rating + review
+  // count once confirmed (e.g. "4.9 ★ · 120 Google reviews"). Do not invent numbers.
 ];
 
 export default function Hero() {
@@ -33,11 +35,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="inline-flex items-center gap-3 border border-[var(--gs-gold)]/40 rounded-full pl-2 pr-5 py-2"
+            className="inline-flex items-center gap-3 border border-[var(--gs-gold)]/40 rounded-full px-6 py-2"
           >
-            <img src={IMAGES.logo} alt="" className="h-6 w-6 object-contain" />
             <span className="text-[10px] uppercase tracking-[0.3em] text-[var(--gs-champagne)]">
-              Luxury Med Spa
+              Med Spa ✦ McAllen, TX
             </span>
           </motion.div>
 
@@ -60,8 +61,9 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 1 }}
             className="mt-8 max-w-md text-white/65 text-base md:text-lg font-light leading-relaxed"
           >
-            Medical aesthetics reimagined as ritual. Where clinical science meets
-            candlelit calm — and your natural radiance is simply revealed.
+            Medical aesthetics in McAllen, TX — from injectables and the signature
+            Gold Skin Facial to physician-guided weight loss. Where clinical expertise
+            meets a warm, personal touch, and your natural radiance is simply revealed.
           </motion.p>
 
           <motion.div
@@ -95,12 +97,9 @@ export default function Hero() {
             className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-6 border-t border-white/10 pt-8"
           >
             {STATS.map((s) => (
-              <div key={s.label} className="flex flex-col">
-                <div className="flex items-center gap-2">
-                  <span className="font-serif-display text-3xl md:text-4xl text-white">{s.value}</span>
-                  {s.value === "4.9" && <Star size={16} className="text-[var(--gs-gold)] fill-[var(--gs-gold)]" strokeWidth={0} />}
-                </div>
-                <span className="mt-1 text-[11px] uppercase tracking-[0.18em] text-white/45">{s.label}</span>
+              <div key={s.label} className="flex flex-col max-w-[220px]">
+                <span className="font-serif-display text-2xl md:text-3xl text-white leading-tight">{s.value}</span>
+                <span className="mt-1.5 text-[11px] uppercase tracking-[0.14em] text-white/45 leading-snug">{s.label}</span>
               </div>
             ))}
           </motion.div>
@@ -131,11 +130,12 @@ export default function Hero() {
                 <Star key={i} size={13} className="fill-[var(--gs-gold-muted)]" strokeWidth={0} />
               ))}
             </div>
-            <p className="mt-3 font-serif-display text-lg leading-snug">
-              “I've never felt more like myself. Truly transformative.”
+            <p className="mt-3 font-serif-display text-base leading-snug">
+              “She is skilled and knowledgeable on how to operate the machine for my
+              treatment and she explained the treatment to me in detail.”
             </p>
             <p className="mt-3 text-[10px] uppercase tracking-[0.2em] text-[var(--gs-ink)]/60">
-              — A. Rivera, Client
+              — Crystal Tan
             </p>
           </motion.div>
 

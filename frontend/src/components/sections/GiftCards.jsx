@@ -50,8 +50,9 @@ export default function GiftCards() {
             Gift Cards
           </h2>
           <p className="mt-6 text-white/55 font-light md:text-lg">
-            Give the rare luxury of time and radiance. Build the perfect card in seconds —
-            redeemable across every treatment.
+            Give the gift of confidence at McAllen's Gold Skin Spa & Beauty. Build the
+            perfect card in seconds — redeemable across facials, injectables, laser and
+            weight-loss treatments.
           </p>
         </div>
 

@@ -5,10 +5,10 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { SERVICES } from "@/lib/content";
 
 const INFO = [
-  { icon: MapPin, label: "Studio", value: "128 Aurelia Avenue, Beverly Hills, CA" },
-  { icon: Phone, label: "Call", value: "+1 (310) 555-0147" },
-  { icon: Mail, label: "Email", value: "hello@goldskin.com" },
-  { icon: Clock, label: "Hours", value: "Tue – Sat · 9am – 7pm" },
+  { icon: MapPin, label: "Studio", value: "3400 N. McColl Rd Ste D, McAllen, TX 78501" },
+  { icon: Phone, label: "Call", value: "+1 (956) 310-1775" },
+  { icon: Mail, label: "Email", value: "goldskinspa@gmail.com" },
+  { icon: Clock, label: "Hours", value: "Mon–Fri 9am–7pm · Sat 10am–3pm · Sun Closed" },
 ];
 
 const fadeUp = {
@@ -113,7 +113,7 @@ export default function Contact() {
             </div>
             <div className="mt-auto pt-10">
               <p className="font-serif-display italic text-lg text-[var(--gs-champagne)]">
-                Complimentary valet parking for all guests.
+                Serving McAllen &amp; the Rio Grande Valley — free parking for all guests.
               </p>
             </div>
           </motion.div>
@@ -129,16 +129,17 @@ export default function Contact() {
             className="relative min-h-[420px] lg:min-h-full border border-white/10 overflow-hidden"
           >
             <iframe
-              title="Gold Skin Spa location"
-              src="https://www.google.com/maps?q=Beverly+Hills+California&output=embed"
-              className="absolute inset-0 h-full w-full grayscale-[35%] contrast-[1.1]"
-              style={{ border: 0, filter: "grayscale(40%) invert(0.9) hue-rotate(180deg)" }}
+              title="Gold Skin Spa & Beauty — McAllen, TX location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.902927779496!2d-98.20940982400066!3d26.232343488996683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8665a1b7dd50c3a3%3A0x5ed65d4fadda02ee!2sGold%20Skin%20Spa%20and%20Beauty!5e0!3m2!1sen!2sin!4v1786135878306!5m2!1sen!2sin"
+              className="absolute inset-0 h-full w-full"
+              style={{ border: 0, filter: "grayscale(35%) contrast(1.05)" }}
+              allowFullScreen=""
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
             />
             <div className="pointer-events-none absolute bottom-5 left-5 bg-black/80 backdrop-blur-md border border-[var(--gs-gold)]/30 px-5 py-3">
               <p className="text-[10px] uppercase tracking-[0.25em] text-[var(--gs-champagne)]">Find us</p>
-              <p className="mt-1 text-white/85 font-light text-sm">Beverly Hills, CA</p>
+              <p className="mt-1 text-white/85 font-light text-sm">McAllen, TX 78501</p>
             </div>
           </motion.div>
         </div>

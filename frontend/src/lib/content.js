@@ -1,4 +1,17 @@
-// Placeholder content + brand imagery for Gold Skin Spa And Beauty
+// Real business content for Gold Skin Spa & Beauty — McAllen, TX
+
+export const BUSINESS = {
+  name: "Gold Skin Spa & Beauty",
+  address: "3400 N. McColl Rd Ste D, McAllen, TX 78501",
+  addressLine1: "3400 N. McColl Rd Ste D",
+  addressLine2: "McAllen, TX 78501",
+  phone: "+1 (956) 310-1775",
+  phoneHref: "tel:+19563101775",
+  email: "goldskinspa@gmail.com",
+  hours: "Mon–Fri 9am–7pm · Sat 10am–3pm · Sun Closed",
+  mapEmbed:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.902927779496!2d-98.20940982400066!3d26.232343488996683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8665a1b7dd50c3a3%3A0x5ed65d4fadda02ee!2sGold%20Skin%20Spa%20and%20Beauty!5e0!3m2!1sen!2sin!4v1786135878306!5m2!1sen!2sin",
+};
 
 export const IMAGES = {
   logo: "/logo-mark.png",
@@ -34,47 +47,98 @@ export const MANIFESTO = [
   {
     n: "01",
     title: "Philosophy",
-    body: "We believe beauty is not manufactured — it is revealed. Every ritual at Gold Skin begins with listening to your skin, then coaxing forward the radiance that was always there.",
+    body: "Gold Skin Spa & Beauty is McAllen's home for beauty that looks entirely like you. We don't chase trends — we reveal the confidence that's already yours through thoughtful, results-driven medical aesthetics.",
   },
   {
     n: "02",
-    title: "Science",
-    body: "Medical-grade technology meets an artist's restraint. Our clinicians pair evidence-based aesthetics with a gentle, unhurried touch, so results feel less like a procedure and more like a return.",
+    title: "Expertise",
+    body: "From injectables and the Gold Skin Facial to physician-guided weight loss with Tirzepatide and Semaglutide, every treatment is delivered with medical precision and a genuine, unhurried touch — care you can trust in the Rio Grande Valley.",
   },
   {
     n: "03",
-    title: "Ritual",
-    body: "Time slows the moment you arrive. Warm candlelight, hushed rooms and a bespoke protocol crafted for you alone — this is renewal treated as ceremony, not appointment.",
+    title: "Experience",
+    body: "Serving McAllen and the greater RGV, we design a protocol around your goals alone. Warm, private and personal — this is medical aesthetics treated as ritual, not routine.",
   },
 ];
 
 export const SERVICES = [
-  { n: "01", title: "Signature HydraGlow Facial", price: "$180", desc: "Deep resurfacing, infusion and lymphatic sculpting for an immediate, lit-from-within finish." },
-  { n: "02", title: "Botox & Neuromodulators", price: "from $12 / unit", desc: "Precision softening of expression lines by our medical injectors — natural, never frozen." },
-  { n: "03", title: "Dermal Fillers", price: "from $650", desc: "Restore volume and redefine contour with hyaluronic artistry tailored to your anatomy." },
-  { n: "04", title: "Laser Skin Resurfacing", price: "$450", desc: "Fractional laser to refine texture, erase sun damage and awaken new collagen." },
-  { n: "05", title: "Microneedling with PRP", price: "$550", desc: "Your own growth factors, channelled deep to firm, brighten and regenerate." },
-  { n: "06", title: "Medical Chemical Peels", price: "$220", desc: "Custom-blended acids that dissolve dullness and reveal a fresher surface." },
-  { n: "07", title: "Body Contouring", price: "$400", desc: "Non-invasive sculpting to tighten, smooth and redefine — zero downtime." },
-  { n: "08", title: "IV Wellness Drips", price: "$150", desc: "Bespoke vitamin infusions for glow, energy and recovery from the inside out." },
+  {
+    n: "01",
+    title: "Tirzepatide Weight-Loss Treatment",
+    price: "from $296",
+    deposit: "$30 consult deposit",
+    desc: "Physician-guided treatment designed to reduce appetite and support lasting metabolic health, tailored to your goals.",
+  },
+  {
+    n: "02",
+    title: "Semaglutide Weight-Loss Treatment",
+    price: "from $224",
+    deposit: "$30 consult deposit",
+    desc: "A personalized, physician-supervised path to sustainable weight loss and improved wellness.",
+  },
+  {
+    n: "03",
+    title: "Microneedling + Regenerative Cells",
+    price: "from $250",
+    desc: "Advanced collagen-stimulating treatment customized with targeted regenerative infusions for hydration, brightening, or anti-aging results.",
+  },
+  {
+    n: "04",
+    title: "Bacio Lip Booster by Promoitalia",
+    price: "from $199",
+    desc: "A luxurious lip treatment that deeply hydrates and revitalizes for smoother, softer lips with a natural glow — no added volume.",
+  },
+  {
+    n: "05",
+    title: "Laser Hair Removal",
+    price: "from $180",
+    desc: "Long-lasting hair reduction for smoother, softer skin — customizable by treatment area, with full-body packages available.",
+  },
+  {
+    n: "06",
+    title: "Gold Skin Facial",
+    price: "$150",
+    desc: "Our signature facial combines advanced technique and technology to deeply cleanse, refine, and rejuvenate — with lasting, personalized results.",
+  },
+  {
+    n: "07",
+    title: "Hydrofacial",
+    price: "$149",
+    desc: "A powerful, non-invasive resurfacing treatment combining cleansing, extraction, and deep hydration for instantly radiant skin.",
+  },
+  {
+    n: "08",
+    title: "Hollywood Peel Facial",
+    price: "$145",
+    desc: "A gentle yet powerful laser treatment for a luminous, camera-ready glow — no downtime.",
+  },
 ];
 
 export const GALLERY = [
-  { title: "HydraGlow — 4 weeks", after: IMAGES.portraitGlow },
-  { title: "Laser Resurfacing — 8 weeks", after: IMAGES.portrait2 },
-  { title: "Microneedling + PRP — 6 weeks", after: IMAGES.portraitGray },
-];
-
-export const GIFT_CARDS = [
-  { tier: "The Glow", amount: "$100", note: "A single signature facial to begin the ritual." },
-  { tier: "The Radiance", amount: "$250", note: "A curated series for visible, lasting transformation." },
-  { tier: "The Icon", amount: "$500", note: "Our most coveted card — carte blanche to every treatment." },
+  { title: "Gold Skin Facial — radiance restored", after: IMAGES.portraitGlow },
+  { title: "Laser Hair Removal — smoother, softer skin", after: IMAGES.portrait2 },
+  { title: "Microneedling — refined & renewed", after: IMAGES.portraitGray },
 ];
 
 export const FAQS = [
-  { q: "Do I need a consultation before booking a treatment?", a: "Yes — every first visit begins with a complimentary 20-minute consultation so our clinicians can design a protocol around your skin, history and goals." },
-  { q: "Are your injectors medically licensed?", a: "All neuromodulator and filler treatments are performed exclusively by licensed medical professionals under physician oversight." },
-  { q: "How much downtime should I expect?", a: "Most facials and body treatments have zero downtime. Laser and microneedling may involve 24–72 hours of mild redness, which we prepare you for in advance." },
-  { q: "Can I combine treatments in one visit?", a: "Often, yes. Many of our clients pair a facial with an injectable refresh. We'll advise the optimal sequencing during your consultation." },
-  { q: "What is your cancellation policy?", a: "We kindly ask for 24 hours' notice. Late cancellations may be subject to a fee to respect our clinicians' reserved time." },
+  {
+    q: "Do I need a consultation before my first treatment?",
+    a: "Yes — every new client at our McAllen med spa begins with a consultation so our team can understand your skin, health history and goals before designing a personalized treatment plan. Weight-loss programs require a $30 consultation deposit that goes toward your care.",
+  },
+  {
+    q: "Is your weight-loss program medically supervised?",
+    a: "Absolutely. Our Tirzepatide and Semaglutide programs are physician-guided from start to finish, so you have qualified medical oversight at every step of your journey.",
+  },
+  {
+    q: "What treatments do you offer?",
+    a: "We offer 40+ services including injectables, the signature Gold Skin Facial, Hydrofacial, Hollywood Peel, microneedling with regenerative cells, Bacio lip booster, laser hair removal and physician-guided weight loss — all under one roof in McAllen, TX.",
+  },
+  {
+    q: "How much downtime should I expect?",
+    a: "Most of our facials and the Hollywood Peel require little to no downtime. Microneedling and laser treatments may involve brief redness for 24–72 hours, and we'll prepare you fully during your consultation.",
+  },
+  {
+    q: "What is your cancellation policy?",
+    a: "Cancellations are free when made 24 hours or more before your appointment. Same-day cancellations or those made within 24 hours are subject to a $30 fee, out of respect for our team's reserved time.",
+  },
 ];

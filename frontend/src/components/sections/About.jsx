@@ -24,7 +24,7 @@ export default function About() {
               viewport={{ once: true }}
               className="text-[11px] uppercase tracking-[0.35em] text-[var(--gs-champagne)]"
             >
-              The House of Gold Skin
+              Medical Aesthetics · McAllen, TX
             </motion.span>
             <motion.h2
               variants={fadeUp}

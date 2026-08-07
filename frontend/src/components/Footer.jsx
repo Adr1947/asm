@@ -12,8 +12,8 @@ export default function Footer() {
               <span className="font-serif-display text-2xl tracking-[0.2em]">GOLD SKIN</span>
             </div>
             <p className="mt-6 text-white/45 font-light max-w-sm leading-relaxed">
-              A luxury medical spa where clinical science meets candlelit calm. Radiance,
-              revealed.
+              A medical spa in McAllen, TX offering injectables, facials, laser hair removal,
+              body contouring and physician-guided weight loss. Radiance, revealed.
             </p>
             <div className="mt-8 flex gap-5 text-white/50">
               <a href="#top" aria-label="Instagram" className="hover:text-[var(--gs-gold)] transition-colors duration-300"><Instagram strokeWidth={1.2} /></a>
@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="md:col-span-3">
             <p className="text-[10px] uppercase tracking-[0.3em] text-white/40 mb-6">Visit</p>
             <p className="text-white/70 font-light leading-relaxed">
-              128 Aurelia Avenue<br />Beverly Hills, CA<br />+1 (310) 555-0147
+              3400 N. McColl Rd Ste D<br />McAllen, TX 78501<br />+1 (956) 310-1775<br />goldskinspa@gmail.com
             </p>
           </div>
         </div>

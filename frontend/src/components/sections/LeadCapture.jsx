@@ -28,11 +28,11 @@ export default function LeadCapture() {
           The Inner Circle
         </span>
         <h2 className="mt-6 font-serif-display font-light text-4xl md:text-6xl leading-[1] tracking-tight text-[var(--gs-ink)]">
-          First access to <span className="italic text-[var(--gs-gold-muted)]">seasonal rituals.</span>
+          First access to <span className="italic text-[var(--gs-gold-muted)]">exclusive offers.</span>
         </h2>
         <p className="mt-5 text-[var(--gs-ink)]/60 font-light md:text-lg max-w-xl mx-auto">
-          Exclusive treatment previews, private events and quiet offers — reserved
-          entirely for members of the list.
+          Seasonal specials, new-treatment previews and members-only pricing — reserved
+          for our McAllen and Rio Grande Valley clients.
         </p>
 
         <form onSubmit={submit} data-testid="lead-capture-form" className="mt-11 flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">

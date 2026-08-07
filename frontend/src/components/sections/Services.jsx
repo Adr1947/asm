@@ -69,8 +69,11 @@ export default function Services() {
                     <h3 className="font-serif-display text-2xl md:text-4xl text-white/90 group-hover:text-white transition-colors duration-300 group-hover:translate-x-1 transform-gpu will-change-transform">
                       {s.title}
                     </h3>
-                    <span className="font-body text-sm md:text-base text-[var(--gs-champagne)] whitespace-nowrap">
+                    <span className="font-body text-sm md:text-base text-[var(--gs-champagne)] whitespace-nowrap flex flex-col md:items-end">
                       {s.price}
+                      {s.deposit && (
+                        <span className="text-[10px] tracking-wide text-white/35 normal-case">{s.deposit}</span>
+                      )}
                     </span>
                   </div>
                   <p className="mt-2 max-w-xl text-white/45 font-light text-sm md:text-base overflow-hidden max-h-0 group-hover:max-h-24 transition-[max-height,opacity] duration-500 opacity-0 group-hover:opacity-100">
@@ -79,6 +82,17 @@ export default function Services() {
                 </div>
               </motion.div>
             ))}
+
+            <a
+              href="#contact"
+              data-testid="services-full-menu-link"
+              className="group/link mt-10 inline-flex items-center gap-3 font-serif-display italic text-xl md:text-2xl text-[var(--gs-champagne)] hover:text-white transition-colors duration-300"
+            >
+              <span className="border-b border-[var(--gs-gold)]/40 group-hover/link:border-white/60 transition-colors duration-300 pb-1">
+                40+ treatments, one visit away — explore the full menu
+              </span>
+              <span className="transition-transform duration-300 group-hover/link:translate-x-1">→</span>
+            </a>
           </div>
         </div>
       </div>
