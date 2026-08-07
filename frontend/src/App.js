@@ -39,9 +39,9 @@ function App() {
         <Services />
         <Gallery />
         <GiftCards />
-        <Faq />
         <LeadCapture />
         <Contact />
+        <Faq />
       </main>
       <Footer />
     </div>

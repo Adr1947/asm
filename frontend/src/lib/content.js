@@ -25,10 +25,9 @@ export const IMAGES = {
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Results", href: "#gallery" },
   { label: "Gift Cards", href: "#gift-cards" },
   { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export const MANIFESTO = [
