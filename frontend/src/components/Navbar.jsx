@@ -50,7 +50,7 @@ export default function Navbar() {
           <a
             href="#contact"
             data-testid="nav-book-now"
-            className="hidden sm:inline-flex items-center border border-[var(--gs-gold)]/60 px-6 py-2.5 text-[11px] uppercase tracking-[0.22em] text-white hover:bg-[var(--gs-gold)] hover:text-black transition-colors duration-400"
+            className="hidden lg:inline-flex items-center bg-[var(--gs-ivory)] text-[var(--gs-ink)] px-6 py-2.5 text-[11px] uppercase tracking-[0.22em] hover:bg-[var(--gs-champagne)] transition-colors duration-400"
           >
             Book Now
           </a>

@@ -37,9 +37,9 @@ function App() {
         <Marquee />
         <About />
         <Services />
+        <LeadCapture />
         <Gallery />
         <GiftCards />
-        <LeadCapture />
         <Contact />
         <Faq />
       </main>
