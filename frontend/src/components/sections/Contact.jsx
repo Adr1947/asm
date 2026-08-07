@@ -34,9 +34,6 @@ export default function Contact() {
     setForm({ name: "", phone: "", email: "", service: "", message: "" });
   };
 
-  const inputCls =
-    "w-full bg-transparent border-b border-white/20 py-3 px-1 text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--gs-gold)] transition-colors duration-300";
-
   return (
     <section id="contact" data-testid="contact-section" className="relative py-28 md:py-40 bg-[#080808]">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
