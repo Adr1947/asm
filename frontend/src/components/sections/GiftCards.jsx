@@ -66,7 +66,7 @@ export default function GiftCards() {
               data-testid="giftcard-preview"
               className="relative w-full max-w-md aspect-[1.6/1] overflow-hidden rounded-md ring-1 ring-[var(--gs-gold)]/25 shadow-2xl"
             >
-              <img src={activeDesign.image} alt={activeDesign.name} className="absolute inset-0 h-full w-full object-cover" />
+              <img src={activeDesign.image} alt={activeDesign.name} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/85 via-black/45 to-black/60" />
               <div style={{ transform: "translateZ(45px)" }} className="absolute inset-0 p-7 flex flex-col justify-between">
                 <div className="flex items-center justify-between">

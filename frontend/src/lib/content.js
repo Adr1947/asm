@@ -14,7 +14,7 @@ export const BUSINESS = {
 };
 
 export const IMAGES = {
-  logo: "/logo-mark.png",
+  logo: "/logo-mark.webp",
   heroBg:
     "https://images.unsplash.com/photo-1647535662084-ae98e675d35d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxkYXJrJTIwc3BhJTIwaW50ZXJpb3IlMjBjYW5kbGVzJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3ODYxMzEwNjB8MA&ixlib=rb-4.1.0&q=85",
   spaInterior:

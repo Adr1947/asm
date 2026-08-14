@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-12 gap-12 pb-16">
           <div className="md:col-span-5">
             <div className="flex items-center gap-3">
-              <img src={IMAGES.logo} alt="" className="h-11 w-11 object-contain" />
+              <img src={IMAGES.logo} alt="" loading="lazy" decoding="async" className="h-11 w-11 object-contain" />
               <span className="font-serif-display text-2xl tracking-[0.2em]">GOLD SKIN</span>
             </div>
             <p className="mt-6 text-white/45 font-light max-w-sm leading-relaxed">

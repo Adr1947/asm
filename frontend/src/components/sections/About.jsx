@@ -45,11 +45,18 @@ export default function About() {
               viewport={{ once: true }}
               className="mt-10 relative w-full max-w-md aspect-[4/5] overflow-hidden"
             >
-              <img
-                src="/about.png"
-                alt="Gold Skin Spa & Beauty building exterior, McAllen TX"
-                className="h-full w-full object-cover grayscale-[15%] hover:scale-105 transition-transform duration-700 ease-out"
-              />
+              <picture>
+                <source srcSet="/about.webp" type="image/webp" />
+                <img
+                  src="/about.png"
+                  alt="Gold Skin Spa & Beauty building exterior, McAllen TX"
+                  width={949}
+                  height={922}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover grayscale-[15%] hover:scale-105 transition-transform duration-700 ease-out"
+                />
+              </picture>
               <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
             </motion.div>
           </div>

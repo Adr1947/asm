@@ -113,7 +113,18 @@ export default function Hero() {
           className="relative"
         >
           <div className="relative aspect-[4/5] w-full overflow-hidden ring-1 ring-inset ring-white/10">
-            <img src="/hero.png" alt="Gold Skin Spa & Beauty interior, McAllen TX" className="h-full w-full object-cover" />
+            <picture>
+              <source srcSet="/hero.webp" type="image/webp" />
+              <img
+                src="/hero.png"
+                alt="Gold Skin Spa & Beauty interior, McAllen TX"
+                width={947}
+                height={916}
+                fetchPriority="high"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
+            </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
           </div>
 
