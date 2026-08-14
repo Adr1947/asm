@@ -1,144 +1,202 @@
-// Real business content for Gold Skin Spa & Beauty — McAllen, TX
+// Real business content for ART Med Spa — Bethlehem, Georgia
 
 export const BUSINESS = {
-  name: "Gold Skin Spa & Beauty",
-  address: "3400 N. McColl Rd Ste D, McAllen, TX 78501",
-  addressLine1: "3400 N. McColl Rd Ste D",
-  addressLine2: "McAllen, TX 78501",
-  phone: "+1 (956) 310-1775",
-  phoneHref: "tel:+19563101775",
-  email: "goldskinspa@gmail.com",
-  hours: "Mon–Fri 9am–7pm · Sat 10am–3pm · Sun Closed",
+  name: "ART Med Spa",
+  tagline: "Refine, Rejuvenate & Reclaim Your Glow",
+  address: "372 Exchange Blvd, Ste 2, Bethlehem, GA 30620",
+  addressLine1: "372 Exchange Blvd, Ste 2",
+  addressLine2: "Bethlehem, GA 30620",
+  phone: "+1 (770) 902-6111",
+  phoneHref: "tel:+17709026111",
+  email: "info@art-medspa.com",
+  emailHref: "mailto:info@art-medspa.com",
+  serving:
+    "Serving Bethlehem, Winder, Statham, Auburn, Loganville, Braselton & Northeast Georgia",
+  promo: "20% Off Your First Treatment",
   mapEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.902927779496!2d-98.20940982400066!3d26.232343488996683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8665a1b7dd50c3a3%3A0x5ed65d4fadda02ee!2sGold%20Skin%20Spa%20and%20Beauty!5e0!3m2!1sen!2sin!4v1786135878306!5m2!1sen!2sin",
+    "https://www.google.com/maps?q=372+Exchange+Blvd+Bethlehem+GA+30620&output=embed",
 };
 
+// Vagaro booking links (live)
+export const BOOKING_URL =
+  "https://www.vagaro.com/Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVH+Cv5udIOwUZ1t1lHGjaw3Hd1yw2k4bTS3LvvEwnDayrghcIgVKLX+FTiD/B69FoqtGIcetLs7b6ib5DYG5sJyT2fRaIw8DTOvKBfsGaiGrFwt5wnp5rFOG/901XOkHtf2sEEG7ZQvCZwyufuigSO8xb3tojqMvt7fJaKmM/G2O4O5mNcKU1inZLtTCg0S/BfM2SesOTHu65Bz3j0w+qIot32U3HEH7kXowrdEATn3AGuis+6ynaYgXtD/8nRVMl6UThRRXshfbKmZCpfrtf9D4c2cGOymrdo9h9W0Fk6drGPIqLC45mPWG07n+HP2sjDvbJEPug5nU/2UmdxwSVQg0Nj0L/IEY0zH9h9//xUR9C8oLOnWmgzTRu2YuU/pGHBCra+PGo52K75TSfRuoMtLSkCOvv/NdF6AiOb39frUKfZqKnmRlWk1zFoz44f0RfQ==";
+
+export const CONSULT_URL =
+  "https://www.vagaro.com/cl/vH1b5aEh3Ee-V4md5axlBCMduA0Mbsr~7GOskcyYzOg=";
+
 export const IMAGES = {
-  logo: "/logo-mark.webp",
-  heroBg:
-    "https://images.unsplash.com/photo-1647535662084-ae98e675d35d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxkYXJrJTIwc3BhJTIwaW50ZXJpb3IlMjBjYW5kbGVzJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3ODYxMzEwNjB8MA&ixlib=rb-4.1.0&q=85",
-  spaInterior:
-    "https://images.unsplash.com/photo-1765745518673-b562b7304a53?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwyfHxkYXJrJTIwc3BhJTIwaW50ZXJpb3IlMjBjYW5kbGVzJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3ODYxMzEwNjB8MA&ixlib=rb-4.1.0&q=85",
-  candles:
-    "https://images.unsplash.com/photo-1699449160234-499cd96ea57c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwzfHxkYXJrJTIwc3BhJTIwaW50ZXJpb3IlMjBjYW5kbGVzJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3ODYxMzEwNjB8MA&ixlib=rb-4.1.0&q=85",
-  product1:
-    "https://images.unsplash.com/photo-1633793566189-8e9fe6f817fc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBmYWNpYWwlMjBza2luY2FyZSUyMHRyZWF0bWVudCUyMGRhcmslMjBtb29keXxlbnwwfHx8fDE3ODYxMzEwNjB8MA&ixlib=rb-4.1.0&q=85",
-  product2:
-    "https://images.unsplash.com/photo-1633793566023-a74b74104acb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBmYWNpYWwlMjBza2luY2FyZSUyMHRyZWF0bWVudCUyMGRhcmslMjBtb29keXxlbnwwfHx8fDE3ODYxMzEwNjB8MA&ixlib=rb-4.1.0&q=85",
-  product3:
-    "https://images.unsplash.com/photo-1767360963892-3353defd6584?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBmYWNpYWwlMjBza2luY2FyZSUyMHRyZWF0bWVudCUyMGRhcmslMjBtb29keXxlbnwwfHx8fDE3ODYxMzEwNjB8MA&ixlib=rb-4.1.0&q=85",
+  logo: "/art-logo.webp",
+  hero:
+    "https://images.unsplash.com/photo-1731355771418-f10ab62c9f86?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+  injectables:
+    "https://images.unsplash.com/photo-1731355771317-b2ab72c79124?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+  laser:
+    "https://images.unsplash.com/photo-1552693673-1bf958298935?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+  wellness:
+    "https://images.unsplash.com/photo-1650174378624-c9ab2c99e512?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+  facial:
+    "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+  body:
+    "https://images.unsplash.com/photo-1620733723572-11c53f73a416?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+  hair:
+    "https://images.unsplash.com/photo-1551184451-76b762941ad6?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
   portraitGlow:
-    "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGdsb3dpbmclMjBza2luJTIwcG9ydHJhaXQlMjBiZWF1dHl8ZW58MHx8fHwxNzg2MTMxMDYwfDA&ixlib=rb-4.1.0&q=85",
-  portrait2:
-    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHx3b21hbiUyMGdsb3dpbmclMjBza2luJTIwcG9ydHJhaXQlMjBiZWF1dHl8ZW58MHx8fHwxNzg2MTMxMDYwfDA&ixlib=rb-4.1.0&q=85",
-  portraitGray:
-    "https://images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHx3b21hbiUyMGdsb3dpbmclMjBza2luJTIwcG9ydHJhaXQlMjBiZWF1dHl8ZW58MHx8fHwxNzg2MTMxMDYwfDA&ixlib=rb-4.1.0&q=85",
+    "https://images.unsplash.com/photo-1672794776762-18dddc72982e?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+  spaInterior:
+    "https://images.unsplash.com/photo-1657529353336-ba77aa519d21?crop=entropy&cs=srgb&fm=jpg&q=85&w=1000",
+  wellnessMoment:
+    "https://images.unsplash.com/photo-1728727267814-792db55ce678?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
 };
 
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Results", href: "#gallery" },
-  { label: "Gift Cards", href: "#gift-cards" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Reviews", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
+];
+
+export const TRUST = [
+  "Licensed Professionals",
+  "FDA-Approved Products",
+  "Personalized Care",
 ];
 
 export const MANIFESTO = [
   {
     n: "01",
-    title: "Philosophy",
-    body: "Gold Skin Spa & Beauty is McAllen's home for beauty that looks entirely like you. We don't chase trends — we reveal the confidence that's already yours through thoughtful, results-driven medical aesthetics.",
+    title: "Precision",
+    body: "Every treatment is results-driven and delivered with medical exactness — designed to rejuvenate the skin, restore vitality, and enhance your natural beauty safely.",
   },
   {
     n: "02",
-    title: "Expertise",
-    body: "From injectables and the Gold Skin Facial to physician-guided weight loss with Tirzepatide and Semaglutide, every treatment is delivered with medical precision and a genuine, unhurried touch — care you can trust in the Rio Grande Valley.",
+    title: "Artistry",
+    body: "We enhance your features with subtle sophistication. Our certified team trains continuously in the latest techniques, so results are refined, balanced and beautifully natural.",
   },
   {
     n: "03",
-    title: "Experience",
-    body: "Serving McAllen and the greater RGV, we design a protocol around your goals alone. Warm, private and personal — this is medical aesthetics treated as ritual, not routine.",
+    title: "Innovation",
+    body: "We blend advanced technology with personalized care. From consultation to aftercare, every detail is delivered with intention, science and genuine warmth.",
   },
 ];
 
 export const SERVICES = [
   {
     n: "01",
-    title: "Tirzepatide Weight-Loss Treatment",
-    price: "from $296",
-    deposit: "$30 consult deposit",
-    desc: "Physician-guided treatment designed to reduce appetite and support lasting metabolic health, tailored to your goals.",
+    title: "Injectables",
+    tag: "Botox · Fillers · Kybella",
+    desc: "Restore volume and smooth fine lines with Botox, dermal fillers and Kybella treatments for a refreshed, natural look.",
+    image: IMAGES.injectables,
   },
   {
     n: "02",
-    title: "Semaglutide Weight-Loss Treatment",
-    price: "from $224",
-    deposit: "$30 consult deposit",
-    desc: "A personalized, physician-supervised path to sustainable weight loss and improved wellness.",
+    title: "Laser Treatments",
+    tag: "Hair Removal · Skin",
+    desc: "Achieve long-lasting hair reduction and visible skin improvements with advanced, comfortable laser technology.",
+    image: IMAGES.laser,
   },
   {
     n: "03",
-    title: "Microneedling + Regenerative Cells",
-    price: "from $250",
-    desc: "Advanced collagen-stimulating treatment customized with targeted regenerative infusions for hydration, brightening, or anti-aging results.",
+    title: "Wellness Services",
+    tag: "IV Vitamin Therapy",
+    desc: "Support your vitality with IV vitamin therapy, delivering essential nutrients directly into your system for maximum absorption.",
+    image: IMAGES.wellness,
   },
   {
     n: "04",
-    title: "Bacio Lip Booster by Promoitalia",
-    price: "from $199",
-    desc: "A luxurious lip treatment that deeply hydrates and revitalizes for smoother, softer lips with a natural glow — no added volume.",
+    title: "Facial Services",
+    tag: "Anti-Aging · Chemical Peels",
+    desc: "Rejuvenating facials and chemical peels that target fine lines, dullness and texture for a radiant, healthy glow.",
+    image: IMAGES.facial,
   },
   {
     n: "05",
-    title: "Laser Hair Removal",
-    price: "from $180",
-    desc: "Long-lasting hair reduction for smoother, softer skin — customizable by treatment area, with full-body packages available.",
+    title: "Body Contouring",
+    tag: "Non-Surgical Sculpting",
+    desc: "Non-surgical fat reduction and skin tightening to sculpt and refine your natural shape — with little to no downtime.",
+    image: IMAGES.body,
   },
   {
     n: "06",
-    title: "Gold Skin Facial",
-    price: "$150",
-    desc: "Our signature facial combines advanced technique and technology to deeply cleanse, refine, and rejuvenate — with lasting, personalized results.",
-  },
-  {
-    n: "07",
-    title: "Hydrofacial",
-    price: "$149",
-    desc: "A powerful, non-invasive resurfacing treatment combining cleansing, extraction, and deep hydration for instantly radiant skin.",
-  },
-  {
-    n: "08",
-    title: "Hollywood Peel Facial",
-    price: "$145",
-    desc: "A gentle yet powerful laser treatment for a luminous, camera-ready glow — no downtime.",
+    title: "PRP Hair Restoration",
+    tag: "Natural Regrowth",
+    desc: "Stimulate natural hair growth using your body's own platelet-rich plasma for thicker, fuller, healthier hair.",
+    image: IMAGES.hair,
   },
 ];
 
+export const MORE_SERVICES = [
+  "Weight Loss Management",
+  "Hormone Optimization Therapy",
+  "Eyebrow Threading & Tinting",
+  "Chemical Peel",
+];
+
 export const GALLERY = [
-  { title: "Gold Skin Facial — radiance restored", after: IMAGES.portraitGlow },
-  { title: "Laser Hair Removal — smoother, softer skin", after: IMAGES.portrait2 },
-  { title: "Microneedling — refined & renewed", after: IMAGES.portraitGray },
+  { src: IMAGES.spaInterior, label: "Our Space", span: "tall" },
+  { src: IMAGES.facial, label: "Facial Services" },
+  { src: IMAGES.injectables, label: "Injectables" },
+  { src: IMAGES.wellnessMoment, label: "IV Wellness", span: "tall" },
+  { src: IMAGES.laser, label: "Laser Treatments" },
+  { src: IMAGES.body, label: "Body Contouring" },
+  { src: IMAGES.portraitGlow, label: "Real Radiance" },
+  { src: IMAGES.hair, label: "Hair Restoration" },
+];
+
+export const TESTIMONIALS = [
+  {
+    quote:
+      "The staff at ART Med Spa made me feel comfortable from the moment I walked in. They took time to explain everything and answer all my questions. I appreciated their honest approach about what to expect.",
+    name: "Sarah M.",
+    city: "Bethlehem, GA",
+  },
+  {
+    quote:
+      "I was nervous about my first med spa visit, but the team here was incredibly professional and put me at ease. They were thorough in their consultation and never pressured me into anything.",
+    name: "Jennifer K.",
+    city: "Winder, GA",
+  },
+  {
+    quote:
+      "Great experience overall. The facility is clean and modern, and the staff is knowledgeable. They were upfront about realistic expectations, which I really appreciated.",
+    name: "Michael R.",
+    city: "Loganville, GA",
+  },
+];
+
+export const HOURS = [
+  { day: "Monday", time: "Closed" },
+  { day: "Tuesday", time: "10:00 AM – 7:00 PM" },
+  { day: "Wednesday", time: "10:00 AM – 5:00 PM" },
+  { day: "Thursday", time: "10:00 AM – 7:00 PM" },
+  { day: "Friday", time: "10:00 AM – 4:00 PM" },
+  { day: "Saturday", time: "11:00 AM – 3:00 PM" },
+  { day: "Sunday", time: "Closed" },
 ];
 
 export const FAQS = [
   {
-    q: "Do I need a consultation before my first treatment?",
-    a: "Yes — every new client at our McAllen med spa begins with a consultation so our team can understand your skin, health history and goals before designing a personalized treatment plan. Weight-loss programs require a $30 consultation deposit that goes toward your care.",
+    q: "Where can I find a med spa in Bethlehem, GA?",
+    a: "ART Med Spa is located at 372 Exchange Boulevard, Suite 2, Bethlehem, Georgia 30620 — conveniently serving clients throughout Barrow County, Winder, Auburn, Statham, Loganville and surrounding Northeast Georgia communities. Our space was thoughtfully designed to feel calm, refined and welcoming.",
   },
   {
-    q: "Is your weight-loss program medically supervised?",
-    a: "Absolutely. Our Tirzepatide and Semaglutide programs are physician-guided from start to finish, so you have qualified medical oversight at every step of your journey.",
+    q: "What injectable services do you offer?",
+    a: "We offer Botox to temporarily relax facial muscles and soften wrinkles, dermal fillers to restore volume and smooth deeper lines in the cheeks, lips and nasolabial folds, and Kybella to reduce a double chin. Every treatment begins with a consultation so our expert injectors can recommend the best approach for your goals.",
   },
   {
-    q: "What treatments do you offer?",
-    a: "We offer 40+ services including injectables, the signature Gold Skin Facial, Hydrofacial, Hollywood Peel, microneedling with regenerative cells, Bacio lip booster, laser hair removal and physician-guided weight loss — all under one roof in McAllen, TX.",
+    q: "Do you offer laser hair removal?",
+    a: "Yes! Our laser hair removal achieves long-lasting hair reduction on nearly any area — face, underarms, bikini, legs, back and more. Most clients need 6–8 sessions as hair grows in cycles, with 70–90% permanent reduction. Treatments are quick with minimal discomfort.",
   },
   {
-    q: "How much downtime should I expect?",
-    a: "Most of our facials and the Hollywood Peel require little to no downtime. Microneedling and laser treatments may involve brief redness for 24–72 hours, and we'll prepare you fully during your consultation.",
+    q: "How long does Botox last?",
+    a: "Botox results typically last 3–4 months. Effects gradually wear off as muscle activity returns. Regular maintenance every 3–4 months keeps your look smooth and may extend results over time. Your consultation will map out a personalized treatment schedule.",
   },
   {
-    q: "What is your cancellation policy?",
-    a: "Cancellations are free when made 24 hours or more before your appointment. Same-day cancellations or those made within 24 hours are subject to a $30 fee, out of respect for our team's reserved time.",
+    q: "What is IV vitamin therapy?",
+    a: "IV vitamin therapy delivers essential vitamins and nutrients directly into your bloodstream for 100% absorption. Benefits include increased energy, enhanced immunity, improved hydration, faster recovery and better skin health. Sessions take just 30–60 minutes with formulas tailored to your needs.",
+  },
+  {
+    q: "What areas of Georgia do you serve?",
+    a: "Located in Bethlehem, GA (Barrow County), we proudly serve Bethlehem, Winder, Statham, Auburn, Loganville, Braselton, Hoschton, Jefferson and throughout Northeast Georgia — conveniently between Athens and Atlanta.",
   },
 ];

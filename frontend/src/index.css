@@ -3,15 +3,27 @@
 @tailwind utilities;
 
 :root {
-    --gs-base: #050505;
-    --gs-obsidian: #0a0a0a;
-    --gs-surface: #141414;
-    --gs-gold: #d4af37;
-    --gs-gold-muted: #aa8b2b;
-    --gs-champagne: #e6c27a;
-    --gs-ivory: #f1e9da;
-    --gs-ivory-soft: #f7f1e6;
-    --gs-ink: #17140d;
+    /* ART Med Spa — light, sage + gold, cream palette */
+    --cream: #FBFAF6;
+    --cream-2: #F3EFE6;
+    --sage: #AEC29B;
+    --sage-deep: #6E8A58;
+    --sage-soft: #DCE6CE;
+    --sage-mist: #EAF0E1;
+    --gold: #C2A15C;
+    --gold-deep: #A5883F;
+    --champagne: #E4D4A8;
+    --ink: #2B2B26;
+    --ink-soft: #4C4C44;
+    --muted: #77776C;
+    --line: rgba(43, 43, 38, 0.12);
+
+    /* legacy aliases kept so any stray reference still renders on-brand */
+    --gs-gold: var(--gold);
+    --gs-gold-muted: var(--gold-deep);
+    --gs-champagne: var(--gold-deep);
+    --gs-ivory: var(--cream);
+    --gs-ink: var(--ink);
 }
 
 * {
@@ -24,8 +36,8 @@ html {
 
 body {
     margin: 0;
-    background-color: var(--gs-base);
-    color: #ffffff;
+    background-color: var(--cream);
+    color: var(--ink);
     font-family: 'Outfit', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -42,49 +54,56 @@ body {
 
 /* Selection */
 ::selection {
-    background: var(--gs-gold);
-    color: #050505;
+    background: var(--sage);
+    color: var(--ink);
 }
 
 /* Custom thin scrollbar */
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #050505;
+    background: var(--cream);
 }
 ::-webkit-scrollbar-thumb {
-    background: #2a2a2a;
+    background: #cdd6bf;
     border-radius: 0;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--gs-gold-muted);
+    background: var(--sage-deep);
 }
 
-/* Grain overlay */
+/* Grain overlay — very subtle on light bg */
 .grain-overlay {
     position: fixed;
     inset: 0;
     z-index: 9999;
     pointer-events: none;
-    opacity: 0.045;
+    opacity: 0.03;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-.gold-text {
-    color: var(--gs-gold);
+.text-gold {
+    color: var(--gold-deep);
 }
 
 .gold-gradient-text {
-    background: linear-gradient(105deg, #aa8b2b 0%, #e6c27a 40%, #fff4d4 55%, #d4af37 75%, #aa8b2b 100%);
+    background: linear-gradient(105deg, #A5883F 0%, #C2A15C 35%, #E4D4A8 55%, #C2A15C 75%, #A5883F 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.text-outline-gold {
+.sage-gradient-text {
+    background: linear-gradient(105deg, #6E8A58 0%, #8CA575 50%, #AEC29B 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-outline-sage {
     color: transparent;
-    -webkit-text-stroke: 1px rgba(212, 175, 55, 0.35);
+    -webkit-text-stroke: 1px rgba(110, 138, 88, 0.4);
 }
 
 .reveal-mask {
@@ -92,27 +111,34 @@ body {
     display: block;
 }
 
+.eyebrow {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: var(--gold-deep);
+}
+
 @layer base {
     :root {
-        --background: 0 0% 2%;
-        --foreground: 0 0% 100%;
-        --card: 0 0% 8%;
-        --card-foreground: 0 0% 100%;
-        --popover: 0 0% 4%;
-        --popover-foreground: 0 0% 100%;
-        --primary: 45 65% 52%;
-        --primary-foreground: 0 0% 4%;
-        --secondary: 0 0% 8%;
-        --secondary-foreground: 0 0% 98%;
-        --muted: 0 0% 12%;
-        --muted-foreground: 0 0% 63%;
-        --accent: 45 65% 52%;
-        --accent-foreground: 0 0% 4%;
-        --destructive: 0 62% 30%;
+        --background: 44 33% 97%;
+        --foreground: 60 6% 16%;
+        --card: 0 0% 100%;
+        --card-foreground: 60 6% 16%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 60 6% 16%;
+        --primary: 96 24% 44%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 90 27% 85%;
+        --secondary-foreground: 60 6% 16%;
+        --muted: 60 8% 90%;
+        --muted-foreground: 60 5% 45%;
+        --accent: 42 44% 56%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 62% 45%;
         --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 15%;
-        --input: 0 0% 15%;
-        --ring: 45 65% 52%;
+        --border: 60 6% 88%;
+        --input: 60 6% 88%;
+        --ring: 96 24% 44%;
         --radius: 0.25rem;
     }
 }
