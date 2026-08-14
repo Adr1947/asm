@@ -98,9 +98,9 @@ export default function Hero() {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm ring-1 ring-inset ring-[var(--line)] shadow-[0_30px_80px_-30px_rgba(110,138,88,0.5)]">
             <img
               src={IMAGES.hero}
-              alt="Woman receiving a rejuvenating aesthetic treatment at ART Med Spa, Bethlehem GA"
-              width={1000}
-              height={1250}
+              alt="The ART Med Spa team in Bethlehem, GA"
+              width={768}
+              height={1024}
               fetchPriority="high"
               decoding="async"
               className="h-full w-full object-cover"

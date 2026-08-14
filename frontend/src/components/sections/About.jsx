@@ -61,7 +61,9 @@ export default function About() {
             >
               <img
                 src={IMAGES.spaInterior}
-                alt="The calm, refined interior of ART Med Spa in Bethlehem, GA"
+                alt="ART Med Spa storefront in Bethlehem, GA"
+                width={600}
+                height={800}
                 loading="lazy"
                 decoding="async"
                 className="h-full w-full object-cover hover:scale-105 transition-transform duration-700 ease-out"

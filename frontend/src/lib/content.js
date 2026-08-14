@@ -26,8 +26,7 @@ export const CONSULT_URL =
 
 export const IMAGES = {
   logo: "/art-logo.webp",
-  hero:
-    "https://images.unsplash.com/photo-1731355771418-f10ab62c9f86?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+  hero: "/hero.webp",
   injectables:
     "https://images.unsplash.com/photo-1731355771317-b2ab72c79124?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
   laser:
@@ -42,8 +41,7 @@ export const IMAGES = {
     "https://images.unsplash.com/photo-1551184451-76b762941ad6?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
   portraitGlow:
     "https://images.unsplash.com/photo-1672794776762-18dddc72982e?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-  spaInterior:
-    "https://images.unsplash.com/photo-1657529353336-ba77aa519d21?crop=entropy&cs=srgb&fm=jpg&q=85&w=1000",
+  spaInterior: "/about.webp",
   wellnessMoment:
     "https://images.unsplash.com/photo-1728727267814-792db55ce678?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
 };
