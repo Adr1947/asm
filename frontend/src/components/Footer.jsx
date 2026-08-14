@@ -15,41 +15,41 @@ export default function Footer() {
               </span>
               <span className="font-serif-display text-2xl tracking-[0.22em]">ART MED SPA</span>
             </div>
-            <p className="mt-6 text-[var(--cream)]/55 font-light max-w-sm leading-relaxed">
+            <p className="mt-6 text-[rgba(251,250,246,0.55)] font-light max-w-sm leading-relaxed">
               Enhancing natural beauty through advanced aesthetic treatments in a serene,
               luxurious environment — in Bethlehem, Georgia.
             </p>
-            <div className="mt-8 flex gap-5 text-[var(--cream)]/60">
+            <div className="mt-8 flex gap-5 text-[rgba(251,250,246,0.6)]">
               <a href="#top" aria-label="Instagram" className="hover:text-[var(--champagne)] transition-colors duration-300"><Instagram strokeWidth={1.3} /></a>
               <a href="#top" aria-label="Facebook" className="hover:text-[var(--champagne)] transition-colors duration-300"><Facebook strokeWidth={1.3} /></a>
             </div>
           </div>
 
           <div className="md:col-span-2 md:col-start-6">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-[var(--cream)]/40 mb-6">Explore</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-[rgba(251,250,246,0.4)] mb-6">Explore</p>
             <ul className="flex flex-col gap-3">
               {NAV_LINKS.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-[var(--cream)]/70 font-light hover:text-white transition-colors duration-300">{l.label}</a>
+                  <a href={l.href} className="text-[rgba(251,250,246,0.7)] font-light hover:text-white transition-colors duration-300">{l.label}</a>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="md:col-span-3">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-[var(--cream)]/40 mb-6">Services</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-[rgba(251,250,246,0.4)] mb-6">Services</p>
             <ul className="grid grid-cols-1 gap-2.5">
               {serviceLinks.map((s) => (
                 <li key={s}>
-                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--cream)]/70 font-light text-sm hover:text-white transition-colors duration-300">{s}</a>
+                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="text-[rgba(251,250,246,0.7)] font-light text-sm hover:text-white transition-colors duration-300">{s}</a>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="md:col-span-2">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-[var(--cream)]/40 mb-6">Visit</p>
-            <div className="flex flex-col gap-4 text-[var(--cream)]/70 font-light text-sm">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-[rgba(251,250,246,0.4)] mb-6">Visit</p>
+            <div className="flex flex-col gap-4 text-[rgba(251,250,246,0.7)] font-light text-sm">
               <span className="flex items-start gap-2.5"><MapPin size={16} strokeWidth={1.3} className="text-[var(--champagne)] mt-0.5 shrink-0" />{BUSINESS.address}</span>
               <a href={BUSINESS.phoneHref} className="flex items-center gap-2.5 hover:text-white transition-colors"><Phone size={16} strokeWidth={1.3} className="text-[var(--champagne)] shrink-0" />{BUSINESS.phone}</a>
               <a href={BUSINESS.emailHref} className="flex items-center gap-2.5 hover:text-white transition-colors"><Mail size={16} strokeWidth={1.3} className="text-[var(--champagne)] shrink-0" />{BUSINESS.email}</a>
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10 text-[var(--cream)]/40 text-xs">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10 text-[rgba(251,250,246,0.4)] text-xs">
           <p>© {new Date().getFullYear()} ART Med Spa. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#top" className="hover:text-white transition-colors duration-300">Privacy Policy</a>

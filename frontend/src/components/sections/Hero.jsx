@@ -20,8 +20,8 @@ export default function Hero() {
       className="relative w-full overflow-hidden bg-[var(--cream)] pt-36 md:pt-40 pb-0"
     >
       {/* soft sage + gold glows */}
-      <div className="pointer-events-none absolute -top-32 -left-40 h-[520px] w-[520px] rounded-full bg-[var(--sage)]/30 blur-[150px]" />
-      <div className="pointer-events-none absolute top-40 -right-40 h-[460px] w-[460px] rounded-full bg-[var(--champagne)]/30 blur-[150px]" />
+      <div className="pointer-events-none absolute -top-32 -left-40 h-[520px] w-[520px] rounded-full bg-[rgba(174,194,155,0.3)] blur-[150px]" />
+      <div className="pointer-events-none absolute top-40 -right-40 h-[460px] w-[460px] rounded-full bg-[rgba(228,212,168,0.3)] blur-[150px]" />
 
       <div className="relative z-10 mx-auto max-w-[1600px] px-6 md:px-10 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center pb-24 md:pb-28">
         {/* LEFT */}
@@ -30,7 +30,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="inline-flex items-center gap-3 border border-[var(--gold-deep)]/40 rounded-full px-6 py-2 bg-white/50"
+            className="inline-flex items-center gap-3 border border-[rgba(110,87,23,0.4)] rounded-full px-6 py-2 bg-white/50"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--sage-deep)]" />
             <span className="text-[10px] uppercase tracking-[0.3em] text-[var(--gold-deep)]">
@@ -105,7 +105,7 @@ export default function Hero() {
               decoding="async"
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/20 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(43,43,38,0.2)] via-transparent to-transparent" />
           </div>
 
           {/* floating review card */}
@@ -155,7 +155,7 @@ export default function Hero() {
             return (
               <div key={t} className="flex items-center gap-3">
                 <Icon size={20} strokeWidth={1.3} className="text-[var(--champagne)]" />
-                <span className="text-[11px] md:text-xs uppercase tracking-[0.22em] text-[var(--cream)]/85">
+                <span className="text-[11px] md:text-xs uppercase tracking-[0.22em] text-[rgba(251,250,246,0.9)]">
                   {t}
                 </span>
               </div>

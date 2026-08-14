@@ -27,7 +27,7 @@ export default function Faq() {
                     data-testid={`faq-toggle-${i}`}
                     className="w-full flex items-center justify-between gap-6 py-7 text-left group"
                   >
-                    <span className="font-serif-display text-xl md:text-2xl text-[var(--ink)]/85 group-hover:text-[var(--ink)] transition-colors duration-300">
+                    <span className="font-serif-display text-xl md:text-2xl text-[rgba(43,43,38,0.85)] group-hover:text-[var(--ink)] transition-colors duration-300">
                       {f.q}
                     </span>
                     <motion.span

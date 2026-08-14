@@ -37,7 +37,7 @@ export default function Navbar() {
       <nav
         className={`transition-[background-color,backdrop-filter,border-color,box-shadow] duration-500 ${
           scrolled
-            ? "bg-[var(--cream)]/85 backdrop-blur-xl border-b border-[var(--line)] shadow-[0_4px_30px_rgba(43,43,38,0.06)]"
+            ? "bg-[rgba(251,250,246,0.85)] backdrop-blur-xl border-b border-[var(--line)] shadow-[0_4px_30px_rgba(43,43,38,0.06)]"
             : "bg-transparent border-b border-transparent"
         }`}
       >

@@ -4,8 +4,8 @@ import { BUSINESS, BOOKING_URL } from "@/lib/content";
 export default function CTABanner() {
   return (
     <section data-testid="cta-banner" className="relative py-20 md:py-28 bg-[var(--ink)] overflow-hidden">
-      <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-[var(--sage-deep)]/40 blur-[130px]" />
-      <div className="pointer-events-none absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-[var(--gold-deep)]/30 blur-[130px]" />
+      <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-[rgba(94,122,74,0.4)] blur-[130px]" />
+      <div className="pointer-events-none absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-[rgba(110,87,23,0.3)] blur-[130px]" />
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ export default function CTABanner() {
           Ready to reclaim{" "}
           <span className="italic gold-gradient-text">your glow?</span>
         </h2>
-        <p className="mt-5 text-[var(--cream)]/70 font-light md:text-lg max-w-xl mx-auto">
+        <p className="mt-5 text-[rgba(251,250,246,0.7)] font-light md:text-lg max-w-xl mx-auto">
           Schedule your consultation today and start your journey to enhanced natural
           beauty with our licensed professionals in Bethlehem, GA.
         </p>
@@ -37,7 +37,7 @@ export default function CTABanner() {
           <a
             href="#contact"
             data-testid="cta-consult"
-            className="inline-flex items-center justify-center border border-[var(--champagne)]/60 text-[var(--champagne)] px-10 py-4 text-[11px] uppercase tracking-[0.22em] hover:bg-[var(--champagne)] hover:text-[var(--ink)] transition-colors duration-400"
+            className="inline-flex items-center justify-center border border-[rgba(228,212,168,0.6)] text-[var(--champagne)] px-10 py-4 text-[11px] uppercase tracking-[0.22em] hover:bg-[var(--champagne)] hover:text-[var(--ink)] transition-colors duration-400"
           >
             Free Consultation
           </a>
