@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Instagram, Facebook, Phone } from "lucide-react";
-import { NAV_LINKS, IMAGES, BUSINESS, BOOKING_URL, CONSULT_URL } from "@/lib/content";
+import { NAV_LINKS, IMAGES, BUSINESS, BOOKING_URL } from "@/lib/content";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,9 +26,7 @@ export default function Navbar() {
         <span className="text-[var(--champagne)] font-medium">{BUSINESS.promo}</span>
         <span className="mx-2 opacity-40">|</span>
         <a
-          href={CONSULT_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#contact"
           data-testid="announce-consult"
           className="underline underline-offset-4 decoration-[var(--gold)] hover:text-[var(--champagne)] transition-colors duration-300"
         >
@@ -45,7 +43,7 @@ export default function Navbar() {
       >
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 h-[72px] flex items-center justify-between">
           <a href="#top" data-testid="nav-logo" className="flex items-center gap-3 group">
-            <img src={IMAGES.logo} alt="ART Med Spa" className="h-11 w-11 object-contain" />
+            <img src={IMAGES.logo} alt="ART Med Spa" width={44} height={44} className="h-11 w-11 object-contain" />
             <span className="font-serif-display text-xl tracking-[0.28em] text-[var(--ink)] hidden sm:block">
               ART MED SPA
             </span>

@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { BUSINESS, HOURS, BOOKING_URL } from "@/lib/content";
+import { toast } from "sonner";
+import { MapPin, Phone, Mail, Clock, ChevronDown } from "lucide-react";
+import { BUSINESS, HOURS, SERVICES, MORE_SERVICES } from "@/lib/content";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -11,7 +13,25 @@ const fadeUp = {
   }),
 };
 
+const SERVICE_OPTIONS = [...SERVICES.map((s) => s.title), ...MORE_SERVICES];
+
 export default function Contact() {
+  const [form, setForm] = useState({ name: "", phone: "", email: "", service: "", message: "" });
+  const update = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
+
+  const submit = (e) => {
+    e.preventDefault();
+    if (!form.name.trim() || !form.email.trim()) {
+      toast.error("Please add your name and email so we can reach you.");
+      return;
+    }
+    toast.success("Thank you — our team will be in touch shortly to confirm your visit.");
+    setForm({ name: "", phone: "", email: "", service: "", message: "" });
+  };
+
+  const inputClass =
+    "w-full bg-white border border-white/70 rounded-sm py-3 px-4 text-[var(--ink)] placeholder:text-[var(--muted)] focus:outline-none focus:ring-2 focus:ring-white/70 transition-shadow duration-300";
+
   return (
     <section id="contact" data-testid="contact-section" className="relative py-24 md:py-36 bg-[var(--cream)]">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
@@ -24,42 +44,61 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6 items-stretch">
-          {/* Working hours + CTA */}
-          <motion.div
+          {/* Contact form (sage card) */}
+          <motion.form
             variants={fadeUp}
             custom={0}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            data-testid="contact-hours-card"
-            className="bg-[var(--sage-deep)] text-white p-8 md:p-10 rounded-sm flex flex-col"
+            onSubmit={submit}
+            data-testid="contact-form"
+            className="bg-[var(--sage-deep)] text-white p-8 md:p-10 rounded-sm flex flex-col gap-4"
           >
-            <div className="flex items-center gap-3">
-              <Clock size={20} strokeWidth={1.3} className="text-[var(--champagne)]" />
-              <p className="font-serif-display text-2xl">Working Hours</p>
-            </div>
-            <ul className="mt-7 flex flex-col gap-3.5">
-              {HOURS.map((h) => (
-                <li key={h.day} className="flex items-center justify-between text-sm border-b border-white/15 pb-3.5 last:border-0">
-                  <span className="text-white/85">{h.day}</span>
-                  <span className={h.time === "Closed" ? "text-white/45" : "text-white font-medium"}>
-                    {h.time}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="contact-book-btn"
-              className="mt-8 inline-flex items-center justify-center bg-white text-[var(--sage-deep)] py-4 text-[11px] uppercase tracking-[0.22em] hover:bg-[var(--champagne)] transition-colors duration-400"
-            >
-              Book an Appointment
-            </a>
-          </motion.div>
+            <p className="font-serif-display text-2xl">Request an Appointment</p>
+            <p className="text-white/75 text-sm font-light -mt-1 mb-1">
+              Tell us a little about you and we&rsquo;ll take care of the rest.
+            </p>
 
-          {/* Contact info */}
+            <label htmlFor="cf-name" className="sr-only">Full name</label>
+            <input id="cf-name" data-testid="contact-name" placeholder="Full name" aria-label="Full name"
+              value={form.name} onChange={update("name")} className={inputClass} />
+
+            <label htmlFor="cf-phone" className="sr-only">Phone number</label>
+            <input id="cf-phone" data-testid="contact-phone" type="tel" placeholder="Phone number" aria-label="Phone number"
+              value={form.phone} onChange={update("phone")} className={inputClass} />
+
+            <label htmlFor="cf-email" className="sr-only">Email address</label>
+            <input id="cf-email" data-testid="contact-email" type="email" placeholder="Email address" aria-label="Email address"
+              value={form.email} onChange={update("email")} className={inputClass} />
+
+            {/* Service dropdown with chevron */}
+            <label htmlFor="cf-service" className="sr-only">Service of interest</label>
+            <div className="relative">
+              <select id="cf-service" data-testid="contact-service" aria-label="Service of interest"
+                value={form.service} onChange={update("service")}
+                className={`${inputClass} appearance-none pr-11 cursor-pointer ${form.service ? "" : "text-[var(--muted)]"}`}>
+                <option value="">Service of interest</option>
+                {SERVICE_OPTIONS.map((s) => (
+                  <option key={s} value={s} className="text-[var(--ink)]">{s}</option>
+                ))}
+              </select>
+              <ChevronDown size={18} strokeWidth={1.6} aria-hidden="true"
+                className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[var(--sage-deep)]" />
+            </div>
+
+            <label htmlFor="cf-message" className="sr-only">Message</label>
+            <textarea id="cf-message" data-testid="contact-message" rows={3} placeholder="Tell us about your goals (optional)"
+              aria-label="Message" value={form.message} onChange={update("message")}
+              className={`${inputClass} resize-none`} />
+
+            <button type="submit" data-testid="contact-submit"
+              className="mt-1 bg-[var(--ink)] text-white py-4 text-[11px] uppercase tracking-[0.22em] hover:bg-white hover:text-[var(--sage-deep)] transition-colors duration-400">
+              Send Request
+            </button>
+          </motion.form>
+
+          {/* Get In Touch + Working Hours (middle card) */}
           <motion.div
             variants={fadeUp}
             custom={1}
@@ -70,32 +109,47 @@ export default function Contact() {
             className="bg-white border border-[var(--line)] p-8 md:p-10 rounded-sm flex flex-col"
           >
             <p className="font-serif-display text-2xl text-[var(--ink)]">Get In Touch</p>
-            <div className="mt-8 flex flex-col gap-7">
+            <div className="mt-7 flex flex-col gap-6">
               <div className="flex items-start gap-4" data-testid="contact-address">
-                <MapPin size={20} strokeWidth={1.3} className="text-[var(--gold-deep)] mt-0.5 shrink-0" />
+                <MapPin size={20} strokeWidth={1.4} className="text-[var(--gold-deep)] mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.25em] text-[var(--muted)]">Location</p>
                   <p className="mt-1.5 text-[var(--ink-soft)] font-light">{BUSINESS.address}</p>
                 </div>
               </div>
-              <a href={BUSINESS.phoneHref} className="flex items-start gap-4 group" data-testid="contact-phone">
-                <Phone size={20} strokeWidth={1.3} className="text-[var(--gold-deep)] mt-0.5 shrink-0" />
+              <a href={BUSINESS.phoneHref} className="flex items-start gap-4 group" data-testid="contact-phone-link">
+                <Phone size={20} strokeWidth={1.4} className="text-[var(--gold-deep)] mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.25em] text-[var(--muted)]">Call</p>
                   <p className="mt-1.5 text-[var(--ink-soft)] font-light group-hover:text-[var(--sage-deep)] transition-colors">{BUSINESS.phone}</p>
                 </div>
               </a>
-              <a href={BUSINESS.emailHref} className="flex items-start gap-4 group" data-testid="contact-email">
-                <Mail size={20} strokeWidth={1.3} className="text-[var(--gold-deep)] mt-0.5 shrink-0" />
+              <a href={BUSINESS.emailHref} className="flex items-start gap-4 group" data-testid="contact-email-link">
+                <Mail size={20} strokeWidth={1.4} className="text-[var(--gold-deep)] mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.25em] text-[var(--muted)]">Email</p>
-                  <p className="mt-1.5 text-[var(--ink-soft)] font-light group-hover:text-[var(--sage-deep)] transition-colors">{BUSINESS.email}</p>
+                  <p className="mt-1.5 text-[var(--ink-soft)] font-light group-hover:text-[var(--sage-deep)] transition-colors break-all">{BUSINESS.email}</p>
                 </div>
               </a>
             </div>
-            <p className="mt-auto pt-8 font-serif-display italic text-lg text-[var(--sage-deep)]">
-              A calm, refined space — designed for you to relax and leave feeling confident.
-            </p>
+
+            {/* Working hours */}
+            <div className="mt-8 pt-7 border-t border-[var(--line)]" data-testid="contact-hours">
+              <div className="flex items-center gap-3">
+                <Clock size={18} strokeWidth={1.4} className="text-[var(--gold-deep)]" aria-hidden="true" />
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[var(--muted)]">Working Hours</p>
+              </div>
+              <ul className="mt-4 flex flex-col gap-2.5">
+                {HOURS.map((h) => (
+                  <li key={h.day} className="flex items-center justify-between text-sm">
+                    <span className="text-[var(--ink-soft)] font-light">{h.day}</span>
+                    <span className={h.time === "Closed" ? "text-[var(--muted)]" : "text-[var(--ink)] font-medium"}>
+                      {h.time}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </motion.div>
 
           {/* Map */}
@@ -109,7 +163,7 @@ export default function Contact() {
             className="relative min-h-[420px] lg:min-h-full border border-[var(--line)] rounded-sm overflow-hidden"
           >
             <iframe
-              title="ART Med Spa — Bethlehem, GA location"
+              title="ART Med Spa — Bethlehem, GA location on Google Maps"
               src={BUSINESS.mapEmbed}
               className="absolute inset-0 h-full w-full"
               style={{ border: 0 }}

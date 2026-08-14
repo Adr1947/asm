@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, ShieldCheck, Award, HeartHandshake } from "lucide-react";
-import { IMAGES, BUSINESS, BOOKING_URL, CONSULT_URL, TRUST } from "@/lib/content";
+import { IMAGES, BOOKING_URL, TRUST } from "@/lib/content";
 
 const lineVariants = {
   hidden: { y: "110%" },
@@ -79,9 +79,7 @@ export default function Hero() {
               Book an Appointment
             </a>
             <a
-              href={CONSULT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               data-testid="hero-consult-btn"
               className="inline-flex items-center justify-center border border-[var(--gold-deep)] text-[var(--gold-deep)] px-9 py-4 text-[11px] uppercase tracking-[0.22em] hover:bg-[var(--gold-deep)] hover:text-white transition-colors duration-400"
             >
@@ -101,6 +99,8 @@ export default function Hero() {
             <img
               src={IMAGES.hero}
               alt="Woman receiving a rejuvenating aesthetic treatment at ART Med Spa, Bethlehem GA"
+              width={1000}
+              height={1250}
               fetchPriority="high"
               decoding="async"
               className="h-full w-full object-cover"

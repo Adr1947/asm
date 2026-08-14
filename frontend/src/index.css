@@ -7,15 +7,15 @@
     --cream: #FBFAF6;
     --cream-2: #F3EFE6;
     --sage: #AEC29B;
-    --sage-deep: #6E8A58;
+    --sage-deep: #5E7A4A; /* darkened for WCAG AA (white text / links) */
     --sage-soft: #DCE6CE;
     --sage-mist: #EAF0E1;
-    --gold: #C2A15C;
-    --gold-deep: #A5883F;
+    --gold: #C2A15C; /* decorative only (icons, star fills, gradients) */
+    --gold-deep: #6E5717; /* deep antique gold — WCAG AA on cream + sage backgrounds */
     --champagne: #E4D4A8;
     --ink: #2B2B26;
     --ink-soft: #4C4C44;
-    --muted: #77776C;
+    --muted: #5F5F54; /* darkened for WCAG AA on cream + sage backgrounds */
     --line: rgba(43, 43, 38, 0.12);
 
     /* legacy aliases kept so any stray reference still renders on-brand */
@@ -109,6 +109,11 @@ body {
 .reveal-mask {
     overflow: hidden;
     display: block;
+}
+
+/* offset anchored sections below the fixed header (fallback for non-Lenis scroll) */
+section[id] {
+    scroll-margin-top: 110px;
 }
 
 .eyebrow {

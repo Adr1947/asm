@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MANIFESTO, IMAGES, CONSULT_URL } from "@/lib/content";
+import { MANIFESTO, IMAGES } from "@/lib/content";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -96,9 +96,7 @@ export default function About() {
             ))}
 
             <a
-              href={CONSULT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               data-testid="about-consult-link"
               className="group mt-10 inline-flex items-center gap-3 font-serif-display italic text-xl md:text-2xl text-[var(--sage-deep)] hover:text-[var(--gold-deep)] transition-colors duration-300"
             >

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { SERVICES, MORE_SERVICES, BOOKING_URL, CONSULT_URL } from "@/lib/content";
+import { SERVICES, MORE_SERVICES, BOOKING_URL } from "@/lib/content";
 
 export default function Services() {
   return (
@@ -21,9 +21,7 @@ export default function Services() {
           {SERVICES.map((s, i) => (
             <motion.a
               key={s.n}
-              href={CONSULT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
@@ -35,6 +33,8 @@ export default function Services() {
                 <img
                   src={s.image}
                   alt={s.title}
+                  width={900}
+                  height={675}
                   loading="lazy"
                   decoding="async"
                   className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"

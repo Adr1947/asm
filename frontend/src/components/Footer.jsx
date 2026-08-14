@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="md:col-span-4">
             <div className="flex items-center gap-3">
               <span className="h-12 w-12 rounded-full bg-[var(--cream)] flex items-center justify-center">
-                <img src={IMAGES.logo} alt="" loading="lazy" decoding="async" className="h-9 w-9 object-contain" />
+                <img src={IMAGES.logo} alt="" width={36} height={36} loading="lazy" decoding="async" className="h-9 w-9 object-contain" />
               </span>
               <span className="font-serif-display text-2xl tracking-[0.22em]">ART MED SPA</span>
             </div>

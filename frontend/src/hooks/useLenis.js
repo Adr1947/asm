@@ -26,7 +26,7 @@ export function useLenis() {
         const el = document.querySelector(id);
         if (el) {
           e.preventDefault();
-          lenis.scrollTo(el, { offset: -80 });
+          lenis.scrollTo(el, { offset: -110 });
         }
       }
     };

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BUSINESS, BOOKING_URL, CONSULT_URL } from "@/lib/content";
+import { BUSINESS, BOOKING_URL } from "@/lib/content";
 
 export default function CTABanner() {
   return (
@@ -35,9 +35,7 @@ export default function CTABanner() {
             Book an Appointment
           </a>
           <a
-            href={CONSULT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             data-testid="cta-consult"
             className="inline-flex items-center justify-center border border-[var(--champagne)]/60 text-[var(--champagne)] px-10 py-4 text-[11px] uppercase tracking-[0.22em] hover:bg-[var(--champagne)] hover:text-[var(--ink)] transition-colors duration-400"
           >
